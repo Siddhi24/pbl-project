@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/location.css">
+    <script src="https://kit.fontawesome.com/486799dcf4.js" crossorigin="anonymous"></script>
+    <title>Registration Form</title>
+</head>
+<body>
+    
+    <nav class="navbar h-nav-resp">
+        <ul class="navlist v-class-resp">
+            <div class="logo"><img src="../pbl2/img/icon.jpeg" alt="logo"></div>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search" placeholder="Search..">
+            <button class="btn btn-sm"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <!-- <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div> -->
+    </nav>
+    <div class="background1">
+        <!-- <div class="blur"> -->
+
+    <div class="main">
+        
+        <div class="text">Hungry? <br> <br>  </div>
+        <div class="location">
+            <h2>Find by Location <br> <hr> </h2>
+            
+            <form id="location" action="../pbl2/phpcodes/retrieve.php" method="post">
+                <label for=""> <b> <br> Enter Your Delivery Location</b> </label>
+                <br>
+                <input type="text" name="cityName" id="name" placeholder="Enter Your City">
+                <br>
+                <br>
+                
+                <input type="submit" value="Submit" name="submit" id="submit">
+                
+            </form>
+        </div>
+
+        <div class="menu">
+            <h2>Find by Menu <br> <hr> </h2>
+            
+            <form id="menu" action="../pbl2/phpcodes/retrieve.php" method="post">
+                <label for=""> <b> <br> Enter Menu here</b> </label>
+                <br>
+                <input type="text" name="menu" id="name" placeholder="Enter menu">
+                <br>
+                <br>
+                
+                <input type="submit" value="Submit" name="submit" id="submit">
+                <!-- <div class="img2"><img src="../pbl2/img/f1.png" alt="Error loading Image"> -->
+        
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+
+    <!-- <div class="registerimg">
+        <img src="../img/register.jpg" alt="" srcset="">
+    </div> -->
+    <footer>
+        <p class="text-footer">
+            Copyright &copy; 2025 www.HomemadeFood.com - All rights reserved
+        </p>
+    </footer>
+    <!-- <script>
+          function revealmsg(){
+              document.getElementById("hiddenmsg").style.display='block';
+          }
+    </script> -->
+    <!-- <script src="../js/reg.js"></script> -->
+
+
+</body>
+</html>

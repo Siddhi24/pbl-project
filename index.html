@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/486799dcf4.js" crossorigin="anonymous"></script>
+    <title>HomeMadeFood.com</title>
+</head>
+
+<body>
+
+    <nav class="navbar h-nav-resp">
+        <ul class="navlist v-class-resp">
+            <div class="logo"><img src="../pbl2/img/icon.jpeg" alt="logo"></div>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search" placeholder="Search..">
+            <button class="btn btn-sm"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+
+        <form id="order" action="../pbl2/phpcodes/retrieve.php" method="post">
+        <div class="box-main">
+            <div class="FirstHalf">
+                <p class="text-big"> <br> 
+                    <br>  Welcome to Tiffin Services</p>
+                <!-- <p class="text-small">
+                    This website is basically for the old people who are left all alone without any family support.
+                    This would help them by providing home made tiffins or medicines.</p> -->
+                    <!-- <br>
+                    <br> -->
+                <p class="text-mid">Enjoy the tasty homemade food!! <br> <br> Eat Healthy Stay Happy:) </p>
+
+<br>
+                    <div class="buttons">
+                        <!-- <button class="btn1">Click here to Order</button> -->
+                        <!-- <input class="btn2" type="submit" id="submit" value="Click here to Order" name="submit" id="submit"> -->
+                        <button class="btn2"> <a href="location.html"> Click here to Order</a></button>
+                        <button class="btn2"> <a href="register.html"> Click here to Register</a></button>
+                    </div>
+            </div>
+
+        </div>
+    </form>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="text">Contact Us</h2>
+        <hr style="color: black;">
+        <div class="form">
+            <input class='form-input' type="text" name="name" id="name" placeholder="Enter your Name">
+            <input class='form-input' type="text" name="number" id="number" placeholder="Enter your Contact Number">
+            <input class='form-input' type="email" name="email" id="email" placeholder="Enter your Email">
+            <textarea class='form-input' name="text" id="text" cols="30" rows="10" placeholder="Enter your query here"></textarea>
+            <button class="btn submit-btn"> <a href="submit.html">Submit</a></button>
+        </div>
+    </section>
+        <section class="cntct" id="cntct">
+        <div class="container">
+            <div class="contactInfo">
+                <!-- <div class="box">
+                    <div class="icon"><b> ADDRESS </b><i class="fa-solid fa-location-dot"></i>
+                        <div class="txt">
+                            
+                            <p>A/P Rahimatpur <br> Tal-Koregoan Dist-Satara <br> 415511</p>
+                        </div>
+                    </div>
+                </div> -->
+                <br>
+                <div class="box">
+                    <div class="icon"><b >EMAIL </b><i class="fa-solid fa-envelope"></i>
+                        <div class="txt">
+    
+                            <p>naiksiddhi666@gmail.com <br>nishagawai2001@gmail.com <br>kardilepratik1111@gmail.com </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="box">
+                    <div class="icon"><b> PHONE </b><i class="fa-solid fa-phone"></i>
+                        <div class="txt">
+                            
+                            <p>9511752384 <br>9834191309 <br>7709587299 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="text-footer">
+            Copyright &copy; 2025 www.HomemadeFood.com - All rights reserved
+        </p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+

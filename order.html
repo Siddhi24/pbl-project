@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="tiffin_form" method="post" action="tiffin-address.php">
+        <div class="category mp_scroll_div">
+            <div class="foHeading mtop30">Select Meal For</div>
+            <div class="option mp_pr_div">
+                          <input type="radio" class="meal_period" id="mp_L" name="meal_period" value="L" data-other="Lunch" data-mp_count="1">
+                          <label for="mp_L">
+                            <span></span>
+                            <div class="imgCntr"><img src="img/sun.png"></div>
+                            Lunch
+                          </label>
+                    </div><div class="option mp_pr_div">
+                          <input type="radio" class="meal_period" id="mp_D" name="meal_period" value="D" data-other="Dinner" data-mp_count="1">
+                          <label for="mp_D">
+                            <span></span>
+                            <div class="imgCntr"><img src="img/moon.png"></div>
+                            Dinner
+                          </label>
+                    </div><div class="option mp_pr_div">
+                          <input type="radio" class="meal_period" id="mp_B" name="meal_period" value="B" data-other="Both Lunch &amp; Dinner" data-mp_count="2">
+                          <label for="mp_B">
+                            <span></span>
+                            <div class="imgCntr"><img src="img/sun-moon.png"></div>
+                            Both
+                          </label>
+                    </div>							<div class="clearfix"></div>
+        </div>
+
+        
+    </form>
+    <div class="summary plain-bg" style="position: static; margin-left: 0px; top: 0px;">
+        <div class="fntbg">Check Our Delivery Areas<a href="javascript:;" data-toggle="modal" data-target="#DeliveryAddress">Check</a></div>
+        <div class="summary-bg sum_pr_div" id="sidebar" style="visibility: visible;">
+            <!--<div style="margin-bottom:10px; padding:5px 10px; border:1px dashed #fff; background:rgba(255,255,255,0.50)">
+
+                Use coupon <span style="color:#e21e25; font-weight:bold;">"FIT2017"</span> to get 10% additional discount.
+            </div>
+            -->
+            
+            
+            <div class="clearfix"></div>
+            <div class="sumheading">Order Summary</div>
+            <div class="fofifty sum_mp_div" style="">
+                <div class="sumfifty bold">Meal For</div>
+                <div class="sumfifty sum_mp_str">Lunch</div>
+            </div>
+            <div class="fofifty sum_mt_div" style="display:none;">
+                <div class="sumfifty bold">Meal Type</div>
+                <div class="sumfifty sum_mt_str"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="sum_dt_1_div sum_dyn_div" style="display:none;text-align:center;">
+                <div class="sumFul bold" style="padding: 3px 0;">Detail <span class="sum_dt_1_str sum_dyn_str"></span></div>
+            </div>
+            <div class="fofifty sum_st_1_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Meal Plan</div>
+                <div class="sumfifty sum_st_1_str sum_dyn_str"></div>
+            </div>
+            <div class="fofifty sum_md_1_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Duration</div>
+                <div class="sumfifty sum_md_1_str sum_dyn_str"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="fofifty sum_mw_1_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">No.Of Meal/Week</div>
+                <div class="sumfifty sum_mw_1_str sum_dyn_str"></div>
+            </div>
+            <div class="fofifty sum_qty_1_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Quantity</div>
+                <div class="sumfifty sum_qty_1_str sum_dyn_str"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="fofifty sum_chapati_1_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Extra Chapati</div>
+                <div class="sumfifty sum_chapati_1_str">/Meal</div>
+            </div>
+            <div class="fofifty sum_chapati_price_1_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Total Chapati Cost</div>
+                <div class="sumfifty sum_chapati_price_1_str"></div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="fofifty sum_brown_rice_1_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Brown Rice</div>
+                <div class="sumfifty sum_brown_rice_1_str"></div>
+            </div>
+            <div class="fofifty sum_brown_rice_price_1_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Total Brown Rice Cost</div>
+                <div class="sumfifty sum_brown_rice_price_1_str">/Meal</div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="fofifty sum_dlc_1_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Delivery Charges</div>
+                <div class="sumfifty"><i class="fa fa-inr"></i> <span class="sum_dlc_1_str sum_dyn_str"> </span></div>
+            </div>
+            <div class="fofifty sum_tc_1_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Tiffin Cost</div>
+                <div class="sumfifty"><i class="fa fa-inr"></i> <span class="sum_tc_1_str sum_dyn_str"></span></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="sum_dt_2_div sum_dyn_div" style="display:none;text-align:center;">
+                <div class="sumFul bold" style="padding: 3px 0;">Detail <span class="sum_dt_2_str sum_dyn_str"></span></div>
+            </div>
+            <div class="fofifty sum_st_2_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Meal Plan</div>
+                <div class="sumfifty sum_st_2_str sum_dyn_str"></div>
+            </div>
+            <div class="fofifty sum_md_2_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Duration</div>
+                <div class="sumfifty sum_md_2_str sum_dyn_str"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="fofifty sum_mw_2_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">No.Of Meal/Week</div>
+                <div class="sumfifty sum_mw_2_str sum_dyn_str"></div>
+            </div>
+            <div class="fofifty sum_qty_2_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Quantity</div>
+                <div class="sumfifty sum_qty_2_str sum_dyn_str"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="fofifty sum_chapati_2_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Extra Chapati</div>
+                <div class="sumfifty sum_chapati_2_str">/Meal</div>
+            </div>
+            <div class="fofifty sum_chapati_price_2_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Total Chapati Cost</div>
+                <div class="sumfifty sum_chapati_price_2_str"></div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="fofifty sum_brown_rice_2_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Brown Rice</div>
+                <div class="sumfifty sum_brown_rice_2_str"></div>
+            </div>
+            <div class="fofifty sum_brown_rice_price_2_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Total Brown Rice Cost</div>
+                <div class="sumfifty sum_brown_rice_price_2_str"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="fofifty sum_dlc_2_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Delivery Charges</div>
+                <div class="sumfifty"><i class="fa fa-inr"></i> <span class="sum_dlc_2_str sum_dyn_str"></span></div>
+            </div>
+            <div class="fofifty sum_tc_2_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Tiffin Cost</div>
+                <div class="sumfifty"><i class="fa fa-inr"></i> <span class="sum_tc_2_str sum_dyn_str"></span></div>
+            </div>
+            <div class="clear"></div>
+            <div class="fofifty sum_sd_div" style="display:none;">
+                <div class="sumfifty bold">State Date</div>
+                <div class="sumfifty sum_sd_str"></div>
+            </div>
+            <!-- <div class="fofifty sum_rp_div">
+                <div class="sumfifty bold">Brown Rice</div>
+                <div class="sumfifty sum_rp_str"></div>
+            </div> -->
+            <div class="clear"></div>
+            <div class="fofifty sum_cp_div" style="display:none;">
+                <div class="sumfifty bold">Coupon Discount</div>
+                <div class="sumfifty sum_cp_str"></div>
+            </div>
+            <div class="fofifty sum_ctp_div" style="display:none;">
+                <div class="sumfifty bold">Credit Redeem</div>
+                <div class="sumfifty sum_ctp_str"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="fofifty sum_pay_div" style="display:none;">
+                <div class="sumfifty bold">Payment Option</div>
+                <div class="sumfifty sum_pay_str"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="tax_div" style="display:none;">
+                                        </div>
+            <div class="fofifty sum_bill_div sum_dyn_div" style="display:none;">
+                <div class="sumfifty bold">Bill Amount</div>
+                <div class="sumfifty"><i class="fa fa-inr"></i> <span class="sum_bill_str sum_dyn_str"></span></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+</html>
